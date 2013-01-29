@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Confirm Payment";
+}
+
+<h2>Please confirm your Payment</h2>
+
+<h3>@ViewBag.confMessage</h3>
+
+<body>
+
+@using (Html.BeginForm("SendExpCheck", "Paid", new { token = ViewBag.token, payerID = ViewBag.PayerID, amount = ViewBag.amount }))
+{
+    <form>
+    <input type="submit" name="submit" value="Confirm Payment" />
+    </form>
+}
+<br />
+
+
+
+</body>

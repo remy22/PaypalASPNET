@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Ian's Paypal App";
+}
+
+<h1>Ian's Paypal App</h1>
+
+<body>
+
+@using (Html.BeginForm())
+{
+    <h2>How much money do you want to give Ian?:</h2>
+    <form>
+    <label for="amount">Amount (in USD): $</label>
+    <input type="text" name="amount" />
+    <br />
+    <br />
+
+    <h2>Input Billing Information:</h2>
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" />
+    <br />
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname" />
+    <br />
+    <label for="email">Email:</label>
+    <input type="text" name="email" />
+    <br />
+    <label for="street1">Address Line 1:</label>
+    <input type="text" name="street1" />
+    <br />
+    <label for="street2">Address Line 2 (Optional):</label>
+    <input type="text" name="street2" />
+    <br />
+    <label for="city">City:</label>
+    <input type="text" name="city" />
+    <br />
+    <label for="state">State:</label>
+    <input type="text" name="state" />
+    <br />
+    <label for="zip">Zip Code:</label>
+    <input type="text" name="zip" />
+    <br />
+    <label for="country">Country:</label>
+    <input type="text" name="country" />
+    <br />
+    
+    <br />
+    <h2>Input Payment Card Information:</h2>
+    <label for="cardType">Card Type:</label>
+    <select name="cardType">
+        <option selected value="">Select</option>
+        <option value="Visa">Visa </option>
+        <option value="Mastercard">Mastercard </option>
+        <option value="Discover">Discover </option>
+        <option value="Amex">American Express </option>
+    </select>
+    <br />
+    <label for="accountNum">Payment Card Number:</label>
+    <input type="text" name="accountNum" />
+    <br />
+    <label for="cvv">Security Code:</label>
+    <input type="text" name="cvv" />
+    <br />
+    <label for="expMonth">Exp Month (MM):</label>
+    <input type="text" name="expMonth" />
+    <br />
+    <label for="expYear">Exp Year (YYYY):</label>
+    <input type="text" name="expYear" />
+    <br />
+
+    <br />
+
+    <input type="submit" name="submit" value="Pay With Credit Card" />
+    <br />
+    <br />
+    or
+    <br />
+    <br />
+
+
+   <input type="image" name="submit" value="setExpress"
+      src='https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif' />
+
+    </form>
+}
+<br />
+
+
+
+</body>
