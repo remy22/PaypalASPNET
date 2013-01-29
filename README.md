@@ -3,7 +3,7 @@ PaypalASPNET
 
 Paypal API with ASP.NET
 
-A form for collecting information to submitting paypal payments.
+An example form for collecting information to submitting paypal payments.
 
 What I used:
 - Paypal's NVP API
